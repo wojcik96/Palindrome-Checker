@@ -1,1 +1,50 @@
+/* font-family: 'Roboto', sans-serif; */
+/* /* Color Theme Swatches in Hex 
+ #032026 - font
+ #80A6A2 - dod
+ #CCD9D7 - button
+ #5A8C83 - bgc
+ #36594F - dod */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Roboto', sans-serif;
+    color: #032026;
+}
+
+div.wrapper{
+display: flex;
+flex-direction: column;
+justify-content: flex-start; 
+align-items: center;
+height: 100vh;
+background-color: #5A8C83;
+}
+
+input{
+    font-size:25px;
+    padding: 7px 20px;
+    border-radius:5px ;
+}
+button{
+    background-color: #CCD9D7 ;
+    margin-left: 20px;
+    padding: 7px 35px;
+    border: solid 2px #032026 ;
+    border-radius: 5px;
+    font-size: 25px;
+    cursor: pointer;
+}
+button:hover{
+    background-color:#36594F;
+}
+
+ h1,h2{
+     height: 50px;
+     margin-top: 50px;
+ }
 
