@@ -19,7 +19,8 @@ function checkWords() {
       counterGodLetter++;
     } else return;
   });
+  if (!value) return;
   value.length === counterGodLetter
-    ? (span.textContent = "Słowo jest palindromem")
-    : (span.textContent = "Słowo nie jest palindromem");
+    ? (span.textContent = `Słowo: ${value.join("")} jest palindromem`)
+    : (span.textContent = `Słowo: ${value.join("")} nie jest palindromem`);
 }

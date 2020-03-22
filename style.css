@@ -19,10 +19,30 @@ html {
 div.wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   height: 100vh;
   background-color: #5a8c83;
+}
+div.wrapper::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 350px;
+  background-color: #36594f;
+  clip-path: polygon(100% 65%, 0% 100%, 100% 100%);
+}
+div.wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 350px;
+  background-color: #36594f;
+  clip-path: polygon(100% 0%, 0% 0%, 0% 35%);
 }
 
 input {
